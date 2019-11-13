@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Account name"; ObjectID = "Ejw-8s-jL5"; */
+"Ejw-8s-jL5.text" = "Account name";
+
+/* Class = "UITabBarItem"; title = "All Accounts"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "All Accounts";
+
+/* Class = "UITabBarItem"; title = "Visible Accounts"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Visible Accounts";
+
+/* Class = "UILabel"; text = "Iban"; ObjectID = "coj-eO-AWB"; */
+"coj-eO-AWB.text" = "Iban";
+
+/* Class = "UILabel"; text = "Balance"; ObjectID = "rfs-aD-zWD"; */
+"rfs-aD-zWD.text" = "Balance";
