@@ -46,19 +46,17 @@ extension FirstViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! CollectionViewItem
         if(!itemsInfoList[indexPath.row].visible){
-            let backgroundColour = UIColor(red:0.97, green:0.47, blue:0.47, alpha:1.0)
-            item.backgroundColor = backgroundColour
+            item.backgroundColor = Constants.invisibleAccountBackgroundColour
         }
         item.accountNameText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].accountName)
         item.ibanText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].iban)
-        let currency = " cents"
-        item.accountBalanceText.text = fillEmptySpaces(field:  String(itemsInfoList[indexPath.row].balance)) + currency 
+        item.accountBalanceText.text = fillEmptySpaces(field:  String(itemsInfoList[indexPath.row].balance)) + Constants.currency
         return item
     }
     
     func fillEmptySpaces(field : String) -> String {
         if(field.isEmpty){
-            return "No disponible"
+            return Constants.emptyField
         } else {
             return field
         }

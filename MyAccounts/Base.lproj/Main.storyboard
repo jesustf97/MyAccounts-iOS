@@ -26,13 +26,6 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" id="X7g-Ae-nkW">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Item" id="efO-r6-P9L" customClass="CollectionViewItem" customModule="MyAccounts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
@@ -63,7 +56,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-vC-LAq">
-                                                    <rect key="frame" x="178" y="60" width="228" height="45"/>
+                                                    <rect key="frame" x="178" y="59.5" width="228" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="c7n-Gp-b9h"/>
                                                     </constraints>
@@ -78,7 +71,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="Ejw-8s-jL5">
-                                                    <rect key="frame" x="178" y="9" width="211" height="35"/>
+                                                    <rect key="frame" x="178" y="9" width="211" height="34.5"/>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -146,18 +139,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GM2-vk-Iea">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="goA-Co-hLL">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ygm-Ik-uUK">
-                                    <size key="itemSize" width="412" height="170"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uM2-XK-3us">
+                                    <size key="itemSize" width="414" height="170"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Item" id="p6S-SV-Gvu" customClass="CollectionViewItem" customModule="MyAccounts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="16V-23-FRz" customClass="CollectionViewItem" customModule="MyAccounts" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-zF-UaD">
+                                                    <rect key="frame" x="8" y="16" width="137" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-lD-aXH">
+                                                    <rect key="frame" x="8" y="75" width="75.5" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75.5" id="sZH-e2-AKN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tX-cN-Gev">
+                                                    <rect key="frame" x="8" y="118" width="75.5" height="41"/>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-ct-nUT">
+                                                    <rect key="frame" x="178" y="59.5" width="228" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="mIs-Pd-5Fl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="R8U-3y-Bah">
+                                                    <rect key="frame" x="176" y="113" width="228" height="51"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="Z0y-XW-FCG">
+                                                    <rect key="frame" x="178" y="9" width="211" height="34.5"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="R8U-3y-Bah" secondAttribute="trailing" constant="10" id="1Fc-2K-PnJ"/>
+                                                <constraint firstItem="9tX-cN-Gev" firstAttribute="centerY" secondItem="R8U-3y-Bah" secondAttribute="centerY" id="2Qb-8K-ZvV"/>
+                                                <constraint firstItem="Z0y-XW-FCG" firstAttribute="leading" secondItem="gDW-ct-nUT" secondAttribute="leading" id="3Zc-sQ-9a8"/>
+                                                <constraint firstItem="9tX-cN-Gev" firstAttribute="top" secondItem="bSV-lD-aXH" secondAttribute="bottom" constant="23" id="AXv-3o-kwr"/>
+                                                <constraint firstItem="gDW-ct-nUT" firstAttribute="leading" secondItem="bSV-lD-aXH" secondAttribute="trailing" constant="94.5" id="DL1-yG-6Of"/>
+                                                <constraint firstItem="bSV-lD-aXH" firstAttribute="centerY" secondItem="16V-23-FRz" secondAttribute="centerY" id="Erg-xn-WKP"/>
+                                                <constraint firstAttribute="bottom" secondItem="9tX-cN-Gev" secondAttribute="bottom" constant="11" id="IYq-Op-fRc"/>
+                                                <constraint firstItem="R8U-3y-Bah" firstAttribute="top" secondItem="gDW-ct-nUT" secondAttribute="bottom" constant="8" id="ItC-US-zk2"/>
+                                                <constraint firstItem="ysE-zF-UaD" firstAttribute="centerY" secondItem="Z0y-XW-FCG" secondAttribute="centerY" id="P4T-21-pej"/>
+                                                <constraint firstItem="ysE-zF-UaD" firstAttribute="leading" secondItem="bSV-lD-aXH" secondAttribute="leading" id="QxU-Lg-28h"/>
+                                                <constraint firstItem="bSV-lD-aXH" firstAttribute="trailing" secondItem="9tX-cN-Gev" secondAttribute="trailing" id="Rj2-VC-bxx"/>
+                                                <constraint firstAttribute="trailing" secondItem="Z0y-XW-FCG" secondAttribute="trailing" constant="25" id="YxL-Jf-yOh"/>
+                                                <constraint firstItem="gDW-ct-nUT" firstAttribute="top" secondItem="Z0y-XW-FCG" secondAttribute="bottom" constant="16" id="ecg-kU-6ib"/>
+                                                <constraint firstItem="R8U-3y-Bah" firstAttribute="leading" secondItem="9tX-cN-Gev" secondAttribute="trailing" constant="92.5" id="fjM-Bf-itE"/>
+                                                <constraint firstItem="Z0y-XW-FCG" firstAttribute="top" secondItem="16V-23-FRz" secondAttribute="top" constant="9" id="h1z-Yv-5vh"/>
+                                                <constraint firstItem="ysE-zF-UaD" firstAttribute="leading" secondItem="16V-23-FRz" secondAttribute="leadingMargin" id="hy7-Cl-PtQ"/>
+                                                <constraint firstItem="bSV-lD-aXH" firstAttribute="top" secondItem="ysE-zF-UaD" secondAttribute="bottom" constant="38.5" id="o2t-G7-iky"/>
+                                                <constraint firstItem="Z0y-XW-FCG" firstAttribute="leading" secondItem="ysE-zF-UaD" secondAttribute="trailing" constant="33" id="oFW-lf-siV"/>
+                                                <constraint firstItem="gDW-ct-nUT" firstAttribute="trailing" secondItem="16V-23-FRz" secondAttribute="trailingMargin" id="zMD-iA-Udx"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.56035807839999996" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="414" height="170"/>
+                                        <connections>
+                                            <outlet property="accountBalanceText" destination="R8U-3y-Bah" id="f7Q-Fi-Yy6"/>
+                                            <outlet property="accountNameText" destination="Z0y-XW-FCG" id="Avs-Yy-zUq"/>
+                                            <outlet property="ibanText" destination="gDW-ct-nUT" id="Ha3-CW-p8Q"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,7 +240,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Visible Accounts" image="eye.slash" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="visibleAccounts" destination="GM2-vk-Iea" id="TlN-wq-sMn"/>
+                        <outlet property="visibleAccounts" destination="goA-Co-hLL" id="329-eY-qyI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

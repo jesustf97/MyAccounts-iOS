@@ -48,13 +48,13 @@ extension SecondViewController: UICollectionViewDataSource{
         
         item.accountNameText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].accountName)
         item.ibanText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].iban)
-        item.accountBalanceText.text = fillEmptySpaces(field:  String(itemsInfoList[indexPath.row].balance))
+        item.accountBalanceText.text = fillEmptySpaces(field:  String(itemsInfoList[indexPath.row].balance)) + Constants.currency
         return item
     }
     
     func fillEmptySpaces(field : String) -> String {
         if(field.isEmpty){
-            return "No disponible"
+            return Constants.emptyField
         } else {
             return field
         }

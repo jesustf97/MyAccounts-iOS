@@ -17,6 +17,7 @@
 		EA271CB92378862C0020C27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA271CB72378862C0020C27F /* Main.storyboard */; };
 		EA271CBB2378862D0020C27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA271CBA2378862D0020C27F /* Assets.xcassets */; };
 		EA271CBE2378862D0020C27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA271CBC2378862D0020C27F /* LaunchScreen.storyboard */; };
+		EA823610237E09F900E8C737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82360F237E09F900E8C737 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EA271CBA2378862D0020C27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA271CBD2378862D0020C27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA271CBF2378862D0020C27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA82360F237E09F900E8C737 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				EA09EA292378968C00DC5FF4 /* accounts.json */,
+				EA82360F237E09F900E8C737 /* Constants.swift */,
 			);
 			path = Datasource;
 			sourceTree = "<group>";
@@ -75,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				EA271CAE2378862C0020C27F /* MyAccounts */,
-				EA271CAD2378862C0020C27F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,20 +87,22 @@
 				EA271CAC2378862C0020C27F /* MyAccounts.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EA271CAE2378862C0020C27F /* MyAccounts */ = {
 			isa = PBXGroup;
 			children = (
-				EA09EA2D2378BEE000DC5FF4 /* ViewController */,
-				EA09EA282378924D00DC5FF4 /* Datasource */,
 				EA271CAF2378862C0020C27F /* AppDelegate.swift */,
 				EA271CB12378862C0020C27F /* SceneDelegate.swift */,
 				EA271CB72378862C0020C27F /* Main.storyboard */,
-				EA271CBA2378862D0020C27F /* Assets.xcassets */,
 				EA271CBC2378862D0020C27F /* LaunchScreen.storyboard */,
 				EA271CBF2378862D0020C27F /* Info.plist */,
 				19D35EA7237D4E6400D7ED17 /* Models */,
+				EA09EA2D2378BEE000DC5FF4 /* ViewController */,
+				EA09EA282378924D00DC5FF4 /* Datasource */,
+				EA271CAD2378862C0020C27F /* Products */,
+				EA271CBA2378862D0020C27F /* Assets.xcassets */,
 			);
 			path = MyAccounts;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 				EA271CB42378862C0020C27F /* FirstViewController.swift in Sources */,
 				19D35EAC237D4F4500D7ED17 /* AccountItem.swift in Sources */,
 				EA271CB02378862C0020C27F /* AppDelegate.swift in Sources */,
+				EA823610237E09F900E8C737 /* Constants.swift in Sources */,
 				EA09EA2C2378A09B00DC5FF4 /* CollectionViewItem.swift in Sources */,
 				EA271CB22378862C0020C27F /* SceneDelegate.swift in Sources */,
 			);
