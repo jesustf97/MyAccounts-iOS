@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D35EAC237D4F4500D7ED17 /* AccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D35EAB237D4F4500D7ED17 /* AccountItem.swift */; };
 		EA09EA2A2378968C00DC5FF4 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = EA09EA292378968C00DC5FF4 /* accounts.json */; };
 		EA09EA2C2378A09B00DC5FF4 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09EA2B2378A09B00DC5FF4 /* CollectionViewItem.swift */; };
 		EA271CB02378862C0020C27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA271CAF2378862C0020C27F /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19D35EAB237D4F4500D7ED17 /* AccountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItem.swift; sourceTree = "<group>"; };
 		EA09EA292378968C00DC5FF4 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		EA09EA2B2378A09B00DC5FF4 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
 		EA271CAC2378862C0020C27F /* MyAccounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAccounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19D35EA7237D4E6400D7ED17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA09EA2B2378A09B00DC5FF4 /* CollectionViewItem.swift */,
+				19D35EAB237D4F4500D7ED17 /* AccountItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EA09EA282378924D00DC5FF4 /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +98,7 @@
 				EA271CBA2378862D0020C27F /* Assets.xcassets */,
 				EA271CBC2378862D0020C27F /* LaunchScreen.storyboard */,
 				EA271CBF2378862D0020C27F /* Info.plist */,
-				EA09EA2B2378A09B00DC5FF4 /* CollectionViewItem.swift */,
+				19D35EA7237D4E6400D7ED17 /* Models */,
 			);
 			path = MyAccounts;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 			files = (
 				EA271CB62378862C0020C27F /* SecondViewController.swift in Sources */,
 				EA271CB42378862C0020C27F /* FirstViewController.swift in Sources */,
+				19D35EAC237D4F4500D7ED17 /* AccountItem.swift in Sources */,
 				EA271CB02378862C0020C27F /* AppDelegate.swift in Sources */,
 				EA09EA2C2378A09B00DC5FF4 /* CollectionViewItem.swift in Sources */,
 				EA271CB22378862C0020C27F /* SceneDelegate.swift in Sources */,

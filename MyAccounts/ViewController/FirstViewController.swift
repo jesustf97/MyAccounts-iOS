@@ -11,6 +11,7 @@ import UIKit
 class FirstViewController: UIViewController {
 
     let people = ["Alex", "Javier", "Jessica"]
+    var itemsInfo = Array<AccountItem>()
     
     @IBOutlet weak var allAccountsCollectionView: UICollectionView!
     
@@ -28,29 +29,26 @@ class FirstViewController: UIViewController {
            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
             if let accounts = json["accounts"] as? Array<Dictionary<String, Any>> {
                 for account in accounts {
-                    print(account["accountName"])
-                    print(account["accountBalanceInCents"])
-                    print(account["iban"])
-                    print("")
-                }
+                    let accountItem = AccountItem(accountName: account["accountName"] as! String, iban: account["iban"] as! String, balance: account["accountBalanceInCents"] as! Int)
+                    itemsInfo.append(accountItem)
                 }
             }
-        } catch let err{
-            
+       }
+    } catch let err{
+            print(err)
         }
     }
 }
-    
 
 extension FirstViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return people.count
+        return itemsInfo.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! CollectionViewItem
-        item.accountNameText.text = people[indexPath.row]
-        item.ibanText.text = "IBAN"
+        item.accountNameText.text = itemsInfo[indexPath.row].accountName
+        item.ibanText.text = itemsInfo[indexPath.row].iban
         return item
     }
     
