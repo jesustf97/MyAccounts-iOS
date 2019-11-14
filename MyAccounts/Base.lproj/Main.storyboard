@@ -20,27 +20,15 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="X7g-Ae-nkW" firstAttribute="width" secondItem="X7g-Ae-nkW" secondAttribute="height" multiplier="23:17" constant="159" id="SA2-mA-Nbc"/>
-                                    <constraint firstItem="X7g-Ae-nkW" firstAttribute="width" secondItem="X7g-Ae-nkW" secondAttribute="height" multiplier="23:17" constant="159" id="bGn-0Y-E9d"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="woU-OJ-6TK">
                                     <size key="itemSize" width="414" height="170"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Iban value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" id="X7g-Ae-nkW">
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" id="X7g-Ae-nkW">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="0Xw-hC-ynk"/>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="4mb-RA-hZS"/>
-                                        <constraint firstAttribute="height" constant="51" id="5nh-c3-CJ8"/>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="DK2-6o-A22"/>
-                                        <constraint firstAttribute="width" secondItem="X7g-Ae-nkW" secondAttribute="height" multiplier="23:17" constant="159" id="KnO-Qu-SpW"/>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="oYk-K9-42u"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -54,73 +42,68 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOu-5i-EKF">
-                                                    <rect key="frame" x="8" y="16" width="137" height="40"/>
+                                                    <rect key="frame" x="8" y="16" width="137" height="20.5"/>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh7-GH-BD7">
-                                                    <rect key="frame" x="8" y="68" width="77" height="34"/>
+                                                    <rect key="frame" x="8" y="75" width="75.5" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75.5" id="WnD-DS-qGE"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-hU-pCW">
-                                                    <rect key="frame" x="8" y="125" width="77" height="34"/>
+                                                    <rect key="frame" x="8" y="118" width="75.5" height="41"/>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="Ejw-8s-jL5">
-                                                    <rect key="frame" x="168" y="21" width="211" height="35"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-vC-LAq">
+                                                    <rect key="frame" x="178" y="60" width="228" height="45"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="gwg-uY-Ryb"/>
-                                                        <constraint firstAttribute="width" constant="211" id="iFj-GL-cim"/>
+                                                        <constraint firstAttribute="height" constant="45" id="c7n-Gp-b9h"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-vC-LAq">
-                                                    <rect key="frame" x="151" y="68" width="228" height="51"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="51" id="P5C-VR-a6w"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Balance value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-L7-jKp">
+                                                    <rect key="frame" x="176" y="113" width="228" height="51"/>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-L7-jKp">
-                                                    <rect key="frame" x="151" y="124" width="228" height="51"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="228" id="hgv-9s-XXC"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="Ejw-8s-jL5">
+                                                    <rect key="frame" x="178" y="9" width="211" height="35"/>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="mos-hU-pCW" firstAttribute="top" secondItem="Fh7-GH-BD7" secondAttribute="bottom" constant="23" id="0Z4-sV-Y2r"/>
-                                                <constraint firstAttribute="bottom" secondItem="yVc-L7-jKp" secondAttribute="bottom" constant="-5" id="2k9-ff-Wo0"/>
-                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="leading" secondItem="Fh7-GH-BD7" secondAttribute="leading" id="BLt-hG-hF7"/>
-                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="top" secondItem="Ejw-8s-jL5" secondAttribute="bottom" constant="12" id="D6k-Ex-NV9"/>
-                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="top" secondItem="89X-3r-qg2" secondAttribute="top" constant="21" id="MzQ-1O-cYu"/>
-                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="baseline" secondItem="Ejw-8s-jL5" secondAttribute="baseline" id="ONW-Sm-ehH"/>
-                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="top" secondItem="89X-3r-qg2" secondAttribute="top" constant="16" id="QL8-ls-5aR"/>
-                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="trailing" secondItem="Ejw-8s-jL5" secondAttribute="trailing" id="Qpa-q2-rRL"/>
-                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="top" secondItem="mtb-vC-LAq" secondAttribute="bottom" constant="5" id="TnG-Tx-zTX"/>
-                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="leading" secondItem="zOu-5i-EKF" secondAttribute="trailing" constant="23" id="UNt-ry-jOa"/>
-                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="leading" secondItem="mos-hU-pCW" secondAttribute="leading" id="Wtb-6h-fhu"/>
-                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="trailing" secondItem="mtb-vC-LAq" secondAttribute="trailing" id="dMx-dt-Jec"/>
-                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="centerY" secondItem="89X-3r-qg2" secondAttribute="centerY" id="fxW-Ro-fWf"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ejw-8s-jL5" secondAttribute="trailing" constant="35" id="gTY-Gv-LPU"/>
-                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="leading" secondItem="mtb-vC-LAq" secondAttribute="leading" id="geI-Ct-0LK"/>
-                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="firstBaseline" secondItem="mtb-vC-LAq" secondAttribute="firstBaseline" id="qT2-B3-2b2"/>
-                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="trailing" secondItem="mos-hU-pCW" secondAttribute="trailing" id="tAw-kS-lTO"/>
-                                                <constraint firstAttribute="bottom" secondItem="mos-hU-pCW" secondAttribute="bottom" constant="11" id="w7I-UT-qw2"/>
-                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="leading" secondItem="89X-3r-qg2" secondAttribute="leadingMargin" id="yic-pI-0eS"/>
-                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="leading" secondItem="Fh7-GH-BD7" secondAttribute="trailing" constant="66" id="ylx-53-Jpp"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="leading" secondItem="89X-3r-qg2" secondAttribute="leadingMargin" id="2BX-7A-41Q"/>
+                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="leading" secondItem="zOu-5i-EKF" secondAttribute="trailing" constant="33" id="Dgp-u3-dcm"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="centerY" secondItem="89X-3r-qg2" secondAttribute="centerY" id="GHu-WF-zYY"/>
+                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="top" secondItem="Ejw-8s-jL5" secondAttribute="bottom" constant="16" id="GIB-KA-gTD"/>
+                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="leading" secondItem="Fh7-GH-BD7" secondAttribute="trailing" constant="94.5" id="GQD-Ly-lle"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="trailing" secondItem="mos-hU-pCW" secondAttribute="trailing" id="J9c-eX-sGK"/>
+                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="trailing" secondItem="89X-3r-qg2" secondAttribute="trailingMargin" id="MdO-R9-jq6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ejw-8s-jL5" secondAttribute="trailing" constant="25" id="QEp-0v-hAW"/>
+                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="leading" secondItem="mtb-vC-LAq" secondAttribute="leading" id="T87-ki-6LA"/>
+                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="leading" secondItem="mos-hU-pCW" secondAttribute="trailing" constant="92.5" id="UWC-tf-nXM"/>
+                                                <constraint firstItem="mos-hU-pCW" firstAttribute="centerY" secondItem="yVc-L7-jKp" secondAttribute="centerY" id="Vhz-5O-mGN"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="top" secondItem="zOu-5i-EKF" secondAttribute="bottom" constant="38.5" id="Xln-wM-ejd"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="centerY" secondItem="Ejw-8s-jL5" secondAttribute="centerY" id="Yjl-Sc-NCV"/>
+                                                <constraint firstItem="mos-hU-pCW" firstAttribute="top" secondItem="Fh7-GH-BD7" secondAttribute="bottom" constant="23" id="mqV-XG-5Jm"/>
+                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="top" secondItem="mtb-vC-LAq" secondAttribute="bottom" constant="8" id="rq4-Dx-iap"/>
+                                                <constraint firstAttribute="bottom" secondItem="mos-hU-pCW" secondAttribute="bottom" constant="11" id="rzf-9U-meu"/>
+                                                <constraint firstAttribute="trailing" secondItem="yVc-L7-jKp" secondAttribute="trailing" constant="10" id="uvs-58-B7b"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="leading" secondItem="Fh7-GH-BD7" secondAttribute="leading" id="w22-0Q-QGP"/>
+                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="top" secondItem="89X-3r-qg2" secondAttribute="top" constant="9" id="xey-tr-sUU"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.56035807840195551" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,10 +120,10 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kqz-dE-iVm" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="1FS-Q8-he8"/>
-                            <constraint firstItem="kqz-dE-iVm" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="BWc-uB-Fkg"/>
-                            <constraint firstItem="kqz-dE-iVm" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="CgM-ql-W7Z"/>
-                            <constraint firstItem="kqz-dE-iVm" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ya1-BX-Irz"/>
+                            <constraint firstItem="kqz-dE-iVm" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="QPe-9K-H73"/>
+                            <constraint firstItem="kqz-dE-iVm" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="grU-ZC-wzp"/>
+                            <constraint firstItem="kqz-dE-iVm" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="hLE-Az-5j0"/>
+                            <constraint firstItem="kqz-dE-iVm" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="shR-8o-rSr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -174,64 +157,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Item" id="PVB-bT-Kte" customClass="CollectionViewItem" customModule="MyAccounts" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6cd-y0-4II" customClass="CollectionViewItem" customModule="MyAccounts" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="xUT-Xw-w6g">
-                                                    <rect key="frame" x="-45" y="-10" width="299.5" height="104"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="9pn-TK-hGe"/>
-                                                        <constraint firstAttribute="width" secondItem="xUT-Xw-w6g" secondAttribute="height" multiplier="23:17" constant="159" id="CXO-9o-r2X"/>
-                                                        <constraint firstAttribute="height" constant="51" id="RKv-b2-G4X"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="cNa-We-d6D"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="eKx-pL-dmx"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="g3m-KA-y6b"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjY-HN-OmY">
-                                                    <rect key="frame" x="300" y="25" width="77" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFL-m7-17r">
-                                                    <rect key="frame" x="40" y="96" width="106" height="66"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="jpr-lS-qOj"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="xBE-Ax-yT1"/>
-                                                        <constraint firstAttribute="width" secondItem="MFL-m7-17r" secondAttribute="height" multiplier="43:21" id="y3u-Ad-Fnv"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="MFL-m7-17r" firstAttribute="leading" secondItem="xUT-Xw-w6g" secondAttribute="leading" id="DKi-fw-xMt"/>
-                                                <constraint firstItem="xUT-Xw-w6g" firstAttribute="centerY" secondItem="6cd-y0-4II" secondAttribute="centerY" constant="-4" id="FBK-4Q-4mU"/>
-                                                <constraint firstItem="xUT-Xw-w6g" firstAttribute="leading" secondItem="6cd-y0-4II" secondAttribute="leading" constant="83" id="Jz4-DI-ylM"/>
-                                                <constraint firstItem="MFL-m7-17r" firstAttribute="top" secondItem="xUT-Xw-w6g" secondAttribute="bottom" constant="14" id="fMz-lU-Clz"/>
-                                                <constraint firstItem="xUT-Xw-w6g" firstAttribute="top" secondItem="6cd-y0-4II" secondAttribute="top" constant="29" id="sGm-Gh-9p7"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.56035807839999996" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="customSize" width="414" height="170"/>
-                                        <connections>
-                                            <outlet property="accountBalanceText" destination="XjY-HN-OmY" id="kNo-AE-xhL"/>
-                                            <outlet property="accountNameText" destination="xUT-Xw-w6g" id="30Z-uy-bNz"/>
-                                            <outlet property="ibanText" destination="MFL-m7-17r" id="2MT-kw-wJa"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

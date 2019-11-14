@@ -45,9 +45,7 @@ extension SecondViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! CollectionViewItem
-        if(!itemsInfoList[indexPath.row].visible){
-            item.backgroundColor = .red
-        }
+        
         item.accountNameText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].accountName)
         item.ibanText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].iban)
         item.accountBalanceText.text = fillEmptySpaces(field:  String(itemsInfoList[indexPath.row].balance))
