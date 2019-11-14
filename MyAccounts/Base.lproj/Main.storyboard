@@ -20,12 +20,31 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="X7g-Ae-nkW" firstAttribute="width" secondItem="X7g-Ae-nkW" secondAttribute="height" multiplier="23:17" constant="159" id="SA2-mA-Nbc"/>
+                                    <constraint firstItem="X7g-Ae-nkW" firstAttribute="width" secondItem="X7g-Ae-nkW" secondAttribute="height" multiplier="23:17" constant="159" id="bGn-0Y-E9d"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="woU-OJ-6TK">
                                     <size key="itemSize" width="414" height="170"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Iban value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" id="X7g-Ae-nkW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="0Xw-hC-ynk"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="4mb-RA-hZS"/>
+                                        <constraint firstAttribute="height" constant="51" id="5nh-c3-CJ8"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="DK2-6o-A22"/>
+                                        <constraint firstAttribute="width" secondItem="X7g-Ae-nkW" secondAttribute="height" multiplier="23:17" constant="159" id="KnO-Qu-SpW"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="oYk-K9-42u"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Item" id="efO-r6-P9L" customClass="CollectionViewItem" customModule="MyAccounts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
@@ -34,53 +53,82 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Account name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="Ejw-8s-jL5">
-                                                    <rect key="frame" x="-45" y="-10" width="299.5" height="104"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="4f0-5H-EC3"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="DWc-1B-ZZo"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="O12-3f-0aG"/>
-                                                        <constraint firstAttribute="height" constant="51" id="Pd3-k6-Kke"/>
-                                                        <constraint firstAttribute="width" secondItem="Ejw-8s-jL5" secondAttribute="height" multiplier="23:17" constant="159" id="dYX-wh-gj6"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="gck-Mr-FbK"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOu-5i-EKF">
+                                                    <rect key="frame" x="8" y="16" width="137" height="40"/>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coj-eO-AWB">
-                                                    <rect key="frame" x="83" y="147" width="43" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="5lE-To-4rP"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="Gzf-eP-rQC"/>
-                                                        <constraint firstAttribute="width" secondItem="coj-eO-AWB" secondAttribute="height" multiplier="43:21" id="e9w-fY-DrJ"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh7-GH-BD7">
+                                                    <rect key="frame" x="8" y="68" width="77" height="34"/>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfs-aD-zWD">
-                                                    <rect key="frame" x="300" y="25" width="77" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mos-hU-pCW">
+                                                    <rect key="frame" x="8" y="125" width="77" height="34"/>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="Ejw-8s-jL5">
+                                                    <rect key="frame" x="168" y="21" width="211" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="gwg-uY-Ryb"/>
+                                                        <constraint firstAttribute="width" constant="211" id="iFj-GL-cim"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-vC-LAq">
+                                                    <rect key="frame" x="151" y="68" width="228" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="51" id="P5C-VR-a6w"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-L7-jKp">
+                                                    <rect key="frame" x="151" y="124" width="228" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="228" id="hgv-9s-XXC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="coj-eO-AWB" firstAttribute="leading" secondItem="Ejw-8s-jL5" secondAttribute="leading" id="IhP-CQ-NLb"/>
-                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="top" secondItem="89X-3r-qg2" secondAttribute="top" constant="29" id="K9n-fl-vMt"/>
-                                                <constraint firstItem="coj-eO-AWB" firstAttribute="top" secondItem="Ejw-8s-jL5" secondAttribute="bottom" constant="14" id="SV1-QM-gFp"/>
-                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="centerY" secondItem="89X-3r-qg2" secondAttribute="centerY" constant="-4" id="l1n-HW-3dm"/>
-                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="leading" secondItem="89X-3r-qg2" secondAttribute="leading" constant="83" id="zxR-0y-bLM"/>
+                                                <constraint firstItem="mos-hU-pCW" firstAttribute="top" secondItem="Fh7-GH-BD7" secondAttribute="bottom" constant="23" id="0Z4-sV-Y2r"/>
+                                                <constraint firstAttribute="bottom" secondItem="yVc-L7-jKp" secondAttribute="bottom" constant="-5" id="2k9-ff-Wo0"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="leading" secondItem="Fh7-GH-BD7" secondAttribute="leading" id="BLt-hG-hF7"/>
+                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="top" secondItem="Ejw-8s-jL5" secondAttribute="bottom" constant="12" id="D6k-Ex-NV9"/>
+                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="top" secondItem="89X-3r-qg2" secondAttribute="top" constant="21" id="MzQ-1O-cYu"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="baseline" secondItem="Ejw-8s-jL5" secondAttribute="baseline" id="ONW-Sm-ehH"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="top" secondItem="89X-3r-qg2" secondAttribute="top" constant="16" id="QL8-ls-5aR"/>
+                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="trailing" secondItem="Ejw-8s-jL5" secondAttribute="trailing" id="Qpa-q2-rRL"/>
+                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="top" secondItem="mtb-vC-LAq" secondAttribute="bottom" constant="5" id="TnG-Tx-zTX"/>
+                                                <constraint firstItem="Ejw-8s-jL5" firstAttribute="leading" secondItem="zOu-5i-EKF" secondAttribute="trailing" constant="23" id="UNt-ry-jOa"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="leading" secondItem="mos-hU-pCW" secondAttribute="leading" id="Wtb-6h-fhu"/>
+                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="trailing" secondItem="mtb-vC-LAq" secondAttribute="trailing" id="dMx-dt-Jec"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="centerY" secondItem="89X-3r-qg2" secondAttribute="centerY" id="fxW-Ro-fWf"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ejw-8s-jL5" secondAttribute="trailing" constant="35" id="gTY-Gv-LPU"/>
+                                                <constraint firstItem="yVc-L7-jKp" firstAttribute="leading" secondItem="mtb-vC-LAq" secondAttribute="leading" id="geI-Ct-0LK"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="firstBaseline" secondItem="mtb-vC-LAq" secondAttribute="firstBaseline" id="qT2-B3-2b2"/>
+                                                <constraint firstItem="Fh7-GH-BD7" firstAttribute="trailing" secondItem="mos-hU-pCW" secondAttribute="trailing" id="tAw-kS-lTO"/>
+                                                <constraint firstAttribute="bottom" secondItem="mos-hU-pCW" secondAttribute="bottom" constant="11" id="w7I-UT-qw2"/>
+                                                <constraint firstItem="zOu-5i-EKF" firstAttribute="leading" secondItem="89X-3r-qg2" secondAttribute="leadingMargin" id="yic-pI-0eS"/>
+                                                <constraint firstItem="mtb-vC-LAq" firstAttribute="leading" secondItem="Fh7-GH-BD7" secondAttribute="trailing" constant="66" id="ylx-53-Jpp"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.56035807840195551" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="414" height="170"/>
                                         <connections>
-                                            <outlet property="accountBalanceText" destination="rfs-aD-zWD" id="lvW-pg-nfZ"/>
+                                            <outlet property="accountBalanceText" destination="yVc-L7-jKp" id="LWd-e7-aOm"/>
                                             <outlet property="accountNameText" destination="Ejw-8s-jL5" id="ysw-BK-n4L"/>
-                                            <outlet property="ibanText" destination="coj-eO-AWB" id="sBt-ft-Jtc"/>
+                                            <outlet property="ibanText" destination="mtb-vC-LAq" id="W2J-7L-AUK"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
