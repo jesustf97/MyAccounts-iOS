@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    let people = ["Alex", "Javier", "Jessica","a", "b", "c", "d", "e", "f", "g"]
+    let people = ["Alex", "Javier", "Jessica"]
     
     @IBOutlet weak var allAccountsCollectionView: UICollectionView!
     
@@ -24,27 +24,20 @@ class FirstViewController: UIViewController {
         let url = URL(fileURLWithPath: path)
         do{
             let data = try Data(contentsOf: url)
-            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
             
-            guard let array = json as? [Any] else { return }
-            
-            for account in array{
-                guard let accountDict = account as? [String: Any] else { return }
-                guard let accountName = accountDict["accountName"] as? String else{return}
-                   guard let iban = accountDict["iban"] as? String else{return}
-                guard let balance = accountDict["accountBalanceInCents"] as? Int else{return}
-            
-                print(accountName)
-                print(iban)
-                print(balance)
+           if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+            if let accounts = json["accounts"] as? Array<Dictionary<String, Any>> {
+                for account in accounts {
+                    
+                }
+                }
             }
+        } catch let err{
             
-        }
-        catch{
-                print(error)
         }
     }
 }
+    
 
 extension FirstViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
