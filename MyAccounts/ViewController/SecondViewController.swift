@@ -29,6 +29,7 @@ class SecondViewController: UIViewController {
                            let accountItem = AccountItem(accountName: account["accountName"] as! String, iban: account["iban"] as! String, balance: account["accountBalanceInCents"] as! Int, visible: account["isVisible"] as! Bool)
                            itemsInfoList.append(accountItem)
                        }
+                    itemsInfoList = deleteInvisibleAccounts(accountsList: itemsInfoList)
                    }
               }
            } catch let err{
@@ -59,5 +60,15 @@ extension SecondViewController: UICollectionViewDataSource{
         } else {
             return field
         }
+    }
+    
+    func deleteInvisibleAccounts(accountsList: Array<AccountItem>) -> Array<AccountItem>{
+        var visibleAccountList = Array<AccountItem>()
+        for account in accountsList {
+            if(account.visible){
+                visibleAccountList.append(account)
+            }
+        }
+        return visibleAccountList
     }
 }
