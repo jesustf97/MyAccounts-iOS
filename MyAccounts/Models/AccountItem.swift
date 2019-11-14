@@ -12,4 +12,5 @@ struct AccountItem: Decodable {
     public let accountName: String
     public let iban: String
     public let balance: Int
+    public let visible: Bool
 }

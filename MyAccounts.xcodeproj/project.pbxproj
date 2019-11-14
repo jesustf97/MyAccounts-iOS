@@ -57,6 +57,7 @@
 		EA09EA282378924D00DC5FF4 /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
+				EA09EA292378968C00DC5FF4 /* accounts.json */,
 			);
 			path = Datasource;
 			sourceTree = "<group>";
@@ -66,7 +67,6 @@
 			children = (
 				EA271CB32378862C0020C27F /* FirstViewController.swift */,
 				EA271CB52378862C0020C27F /* SecondViewController.swift */,
-				EA09EA292378968C00DC5FF4 /* accounts.json */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

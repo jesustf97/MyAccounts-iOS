@@ -12,5 +12,5 @@ import UIKit
 class CollectionViewItem: UICollectionViewCell{
     @IBOutlet weak var accountNameText: UILabel!
     @IBOutlet weak var ibanText: UILabel!
-    
+    @IBOutlet weak var accountBalanceText: UILabel!
 }

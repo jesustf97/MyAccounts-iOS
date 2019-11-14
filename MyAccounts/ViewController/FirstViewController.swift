@@ -9,9 +9,8 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
-    let people = ["Alex", "Javier", "Jessica"]
-    var itemsInfo = Array<AccountItem>()
+    
+    var itemsInfoList = Array<AccountItem>()
     
     @IBOutlet weak var allAccountsCollectionView: UICollectionView!
     
@@ -19,7 +18,6 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         allAccountsCollectionView.dataSource = self
-        // Do any additional setup after loading the view.
         
         guard let path = Bundle.main.path(forResource: "accounts", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
@@ -29,8 +27,8 @@ class FirstViewController: UIViewController {
            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
             if let accounts = json["accounts"] as? Array<Dictionary<String, Any>> {
                 for account in accounts {
-                    let accountItem = AccountItem(accountName: account["accountName"] as! String, iban: account["iban"] as! String, balance: account["accountBalanceInCents"] as! Int)
-                    itemsInfo.append(accountItem)
+                    let accountItem = AccountItem(accountName: account["accountName"] as! String, iban: account["iban"] as! String, balance: account["accountBalanceInCents"] as! Int, visible: account["isVisible"] as! Bool)
+                    itemsInfoList.append(accountItem)
                 }
             }
        }
@@ -42,15 +40,25 @@ class FirstViewController: UIViewController {
 
 extension FirstViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemsInfo.count
+        return itemsInfoList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! CollectionViewItem
-        item.accountNameText.text = itemsInfo[indexPath.row].accountName
-        item.ibanText.text = itemsInfo[indexPath.row].iban
+        if(!itemsInfoList[indexPath.row].visible){
+            item.backgroundColor = .red
+        }
+        item.accountNameText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].accountName)
+        item.ibanText.text = fillEmptySpaces(field: itemsInfoList[indexPath.row].iban)
+        item.accountBalanceText.text = fillEmptySpaces(field:  String(itemsInfoList[indexPath.row].balance))
         return item
     }
     
-    
+    func fillEmptySpaces(field : String) -> String {
+        if(field.isEmpty){
+            return "No disponible"
+        } else {
+            return field
+        }
+    }
 }
