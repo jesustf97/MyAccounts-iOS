@@ -28,7 +28,10 @@ class FirstViewController: UIViewController {
            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
             if let accounts = json["accounts"] as? Array<Dictionary<String, Any>> {
                 for account in accounts {
-                    
+                    print(account["accountName"])
+                    print(account["accountBalanceInCents"])
+                    print(account["iban"])
+                    print("")
                 }
                 }
             }
