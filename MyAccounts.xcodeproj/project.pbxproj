@@ -18,8 +18,6 @@
 		EA271CBB2378862D0020C27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA271CBA2378862D0020C27F /* Assets.xcassets */; };
 		EA271CBE2378862D0020C27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA271CBC2378862D0020C27F /* LaunchScreen.storyboard */; };
 		EA823610237E09F900E8C737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82360F237E09F900E8C737 /* Constants.swift */; };
-		EA823619237E1AF800E8C737 /* talento_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA823618237E1AF800E8C737 /* talento_icon.png */; };
-		EA82361B237E1B0600E8C737 /* launcher_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA82361A237E1B0600E8C737 /* launcher_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +35,6 @@
 		EA271CBF2378862D0020C27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA82360F237E09F900E8C737 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA823611237E192A00E8C737 /* logo talento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo talento.png"; path = "../../../Desktop/logo talento.png"; sourceTree = "<group>"; };
-		EA823618237E1AF800E8C737 /* talento_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = talento_icon.png; path = "../../../../Documents/Jesús/TalentoMOBILE/Prueba talento iOS/talento_icon.png"; sourceTree = "<group>"; };
-		EA82361A237E1B0600E8C737 /* launcher_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launcher_icon.png; path = "../../../../Documents/Jesús/TalentoMOBILE/Prueba talento iOS/App Icon/launcher_icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +86,6 @@
 		EA271CAD2378862C0020C27F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA823617237E1AA700E8C737 /* Resources */,
 				EA271CAC2378862C0020C27F /* MyAccounts.app */,
 			);
 			name = Products;
@@ -105,6 +100,7 @@
 				EA271CB72378862C0020C27F /* Main.storyboard */,
 				EA271CBC2378862D0020C27F /* LaunchScreen.storyboard */,
 				EA271CBF2378862D0020C27F /* Info.plist */,
+				EA823617237E1AA700E8C737 /* Resources */,
 				19D35EA7237D4E6400D7ED17 /* Models */,
 				EA09EA2D2378BEE000DC5FF4 /* ViewController */,
 				EA09EA282378924D00DC5FF4 /* Datasource */,
@@ -117,10 +113,9 @@
 		EA823617237E1AA700E8C737 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EA82361A237E1B0600E8C737 /* launcher_icon.png */,
-				EA823618237E1AF800E8C737 /* talento_icon.png */,
 			);
-			path = Resources;
+			name = Resources;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA823619237E1AF800E8C737 /* talento_icon.png in Resources */,
 				EA271CBE2378862D0020C27F /* LaunchScreen.storyboard in Resources */,
-				EA82361B237E1B0600E8C737 /* launcher_icon.png in Resources */,
 				EA09EA2A2378968C00DC5FF4 /* accounts.json in Resources */,
 				EA271CBB2378862D0020C27F /* Assets.xcassets in Resources */,
 				EA271CB92378862C0020C27F /* Main.storyboard in Resources */,
